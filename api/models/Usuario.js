@@ -23,6 +23,10 @@ module.exports = {
       },
       password: {
         type: 'string'
+      },
+      pizzas: {
+        collection: 'Pizza',
+        via: 'idUsuario'
       }
   }
 };
