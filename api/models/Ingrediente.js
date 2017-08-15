@@ -13,11 +13,11 @@ module.exports = {
       required: true
     },
     precio: {
-      type: 'float'.
+      type: 'float',
       required: true
     },
     detallePizzas: {
-      collection: 'detallePizzas',
+      collection: 'detallePizza',
       via: 'idIngrediente'
     }
   }

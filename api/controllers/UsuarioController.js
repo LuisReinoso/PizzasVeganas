@@ -17,7 +17,7 @@ module.exports = {
 			password: parametros.password
 		}
 
-		Usuario.create(nuevoUsuario).exec(function error, usuarioCreado) {
+		Usuario.create(nuevoUsuario).exec(function (error, usuarioCreado) {
 			if (error) {
 				console.log("Error"+error);
 			} else {
