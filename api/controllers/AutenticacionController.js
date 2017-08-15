@@ -17,6 +17,9 @@ module.exports = {
 			} else {
 				if (usuarioEncontrado.password == parametros.password) {
 					console.log('autenticado');
+					return res.view('pedido', {
+						usuario: usuarioEncontrado
+					});
 				}
 			}
 		})

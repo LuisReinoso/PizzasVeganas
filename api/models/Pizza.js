@@ -8,13 +8,12 @@
 module.exports = {
 
   attributes: {
-    idUsuario: {
-      model:'Usuario',
+    costo: {
+      type: 'float',
       required: true
     },
-    detallePizzas: {
-      collection: 'DetallePizza',
-      via: 'idPizza'
+    idUsuario: {
+      model:'Usuario'
     }
   }
 };

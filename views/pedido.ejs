@@ -1,0 +1,16 @@
+<h1>Preparar pizza</h1>
+<h2>Seleccionar ingredientes</h2>
+
+<form action="/Pizza/GenerarPizza" method="post">
+  cebollas
+  <input type="checkbox" name="cebollas" value="cebollas">
+  tomate
+  <input type="checkbox" name="tomate" value="tomate">
+  pimiento
+  <input type="checkbox" name="pimiento" value="pimiento">
+  champiñones
+  <input type="checkbox" name="champiñones" value="champiñones">
+
+  <input type="hidden" name="correo" value="<%= usuario.correo %>">
+  <button type="submit">Autenticar</button>
+</form>
